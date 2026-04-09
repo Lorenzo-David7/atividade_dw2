@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Títulos - Palmeiras</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Início</a>
+        <a href="/perfil">Meu Perfil</a>
+        <a href="/elenco">Ídolos</a>
+        <a href="/titulos">Títulos</a>
+    </nav>
+
+    <h1>Principais Conquistas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Competição</th>
+                <th>Quantidade</th>
+                <th>Destaque</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% conquistas.forEach(item => { %>
+                <tr>
+                    <td><%= item.campeonato %></td>
+                    <td><%= item.qtd %></td>
+                    <td><%= item.destaque %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+    <footer>
+        <p>FATEC REGISTRO</p>
+    </footer>
+</body>
+</html>

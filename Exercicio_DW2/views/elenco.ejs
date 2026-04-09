@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ídolos Corinthianos</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Início</a>
+        <a href="/perfil">Meu Perfil</a>
+        <a href="/elenco">Ídolos</a>
+        <a href="/titulos">Títulos</a>
+    </nav>
+
+    <h1>Ídolos Corinthianos</h1>
+
+    <div class="elenco-container">
+        <% idolos.forEach(idolo => { %>
+            <div class="jogador-card">
+                <img src="<%= idolo.foto %>" alt="<%= idolo.nome %>">
+                <h3><%= idolo.nome %></h3>
+                <p><strong><%= idolo.posicao %></strong></p>
+                <p style="font-size: 0.8rem; color: #000000;"><%= idolo.detalhe %></p>
+            </div>
+        <% }) %>
+    </div>
+
+    <footer>
+        <p>FATEC REGISTRO</p>
+    </footer>
+</body>
+</html>

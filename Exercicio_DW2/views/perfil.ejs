@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Início</a>
+        <a href="/perfil">Meu Perfil</a>
+        <a href="/elenco">Ídolos</a>
+        <a href="/titulos">Títulos</a>
+    </nav>
+
+    <main>
+        <h1>Meu Perfil Corinthiano</h1>
+        
+        <div style="background-color: white; width: 350px; margin: 30px auto; padding: 25px; border-radius: 15px; border-left: 10px solid #006437; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: left;">
+            <p><strong>Nome do Torcedor:</strong> <%= usuario.nome %></p>
+            <p><strong>Categoria:</strong> <%= usuario.status %></p>
+            <p><strong>Membro desde:</strong> <%= usuario.desde %></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>FATEC REGISTRO</p>
+    </footer>
+</body>
+</html>
