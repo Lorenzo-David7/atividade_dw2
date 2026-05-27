@@ -1,0 +1,48 @@
+<%- include("partials-header") %>
+
+<section class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">Sport Club Corinthians Paulista</p>
+    <h1>O site da Fiel</h1>
+    <p>
+      Cadastre torcedores, conheca idolos historicos e navegue por momentos marcantes do clube.
+    </p>
+    <div class="actions">
+      <a class="button primary" href="/cadastro">Cadastrar torcedor</a>
+      <a class="button ghost" href="/idolos">Ver idolos</a>
+    </div>
+  </div>
+  <div class="crest-panel" aria-label="Escudo do Corinthians">
+    <span>1910</span>
+    <img class="crest-logo" src="/img/corinthians-logo.webp" alt="Logo do Corinthians">
+    <small>O Time do Povo</small>
+  </div>
+</section>
+
+<section class="stats" aria-label="Resumo do site">
+  <article>
+    <strong><%= numeros.torcedores %></strong>
+    <span>torcedores cadastrados</span>
+  </article>
+  <article>
+    <strong><%= numeros.idolos %></strong>
+    <span>idolos no banco</span>
+  </article>
+  <article>
+    <strong><%= numeros.capitulos %></strong>
+    <span>capitulos da historia</span>
+  </article>
+</section>
+
+<section class="split">
+  <div>
+    <p class="eyebrow">Banco de dados</p>
+    <h2>Preparado para MySQL Workbench</h2>
+  </div>
+  <p>
+    O arquivo <strong>database/corinthians_site.sql</strong> cria o banco, as tabelas e os registros iniciais.
+    Depois de executar o script no Workbench, o site salva e lista os cadastros diretamente no MySQL.
+  </p>
+</section>
+
+<%- include("partials-footer") %>

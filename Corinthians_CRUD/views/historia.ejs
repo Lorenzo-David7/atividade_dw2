@@ -1,0 +1,33 @@
+<%- include("partials-header") %>
+
+<section class="page-heading">
+  <p class="eyebrow">Linha do tempo</p>
+  <h1>Historia do clube</h1>
+  <p>Uma visão resumida de momentos importantes do Sport Club Corinthians Paulista.</p>
+  <p>O Sport Club Corinthians Paulista foi fundado em 1º de setembro de 1910, no bairro do Bom Retiro, em São Paulo, por um grupo de operários inspirado em um time inglês chamado Corinthian FC. Desde o começo, o clube ficou conhecido como “o time do povo”.
+
+O Corinthians cresceu rapidamente e conquistou muitos títulos importantes no futebol brasileiro. Entre os momentos mais marcantes da história estão:
+
+* O fim do jejum de títulos paulistas em 1977, com um gol histórico de Basílio.
+* A “Democracia Corinthiana”, nos anos 1980, movimento liderado por jogadores como Sócrates, Casagrande e Wladimir, que defendia mais liberdade e participação dos atletas.
+* A conquista do primeiro Campeonato Brasileiro em 1990.
+* A vitória da Copa Libertadores da América em 2012, de forma invicta.
+* O título do Copa do Mundo de Clubes da FIFA 2012 no mesmo ano, vencendo o Chelsea F.C. por 1 a 0.
+
+Hoje, o Corinthians é um dos clubes mais populares do Brasil, com uma torcida enorme e uma grande tradição no futebol nacional.
+</p>
+</section>
+
+<section class="timeline">
+  <% capitulos.forEach((capitulo) => { %>
+    <article>
+      <time><%= capitulo.ano %></time>
+      <div>
+        <h2><%= capitulo.titulo %></h2>
+        <p><%= capitulo.descricao %></p>
+      </div>
+    </article>
+  <% }) %>
+</section>
+
+<%- include("partials-footer") %>

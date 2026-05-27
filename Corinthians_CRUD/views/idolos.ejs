@@ -1,0 +1,20 @@
+<%- include("partials-header") %>
+
+<section class="page-heading">
+  <p class="eyebrow">Memoria alvinegra</p>
+  <h1>Idolos do Corinthians</h1>
+  <p>Grandes nomes que marcaram epocas e ajudaram a construir a identidade do clube.</p>
+</section>
+
+<section class="cards">
+  <% idolos.forEach((idolo) => { %>
+    <article class="card">
+      <span class="tag"><%= idolo.posicao %></span>
+      <h2><%= idolo.nome %></h2>
+      <p class="periodo"><%= idolo.periodo %></p>
+      <p><%= idolo.descricao %></p>
+    </article>
+  <% }) %>
+</section>
+
+<%- include("partials-footer") %>
